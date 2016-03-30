@@ -1,9 +1,0 @@
-package com.ajax.servlet;
-
-import javax.servlet.http.HttpServlet;
-
-public class JsonServlet extends HttpServlet{
-
-	private static final long serialVersionUID = 1L;
-
-}

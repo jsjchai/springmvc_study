@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename Java project &apos;Copy of ajax03_json_array&apos; to &apos;ajax03_json_array&apos;&#x0D;&#x0A;- Original element: &apos;Copy of ajax03_json_array&apos;&#x0D;&#x0A;- Renamed element: &apos;Copy of ajax03_json_array&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Copy of ajax03_json_array&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Copy of ajax03_json_array" name="ajax03_json_array" references="true" stamp="1428499191007" version="1.0"/>
-</session>
