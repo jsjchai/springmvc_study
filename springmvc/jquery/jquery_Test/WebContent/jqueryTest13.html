@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery事件</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	//onload事件 
+	$(document).ready(function(){
+		//单击事件 
+		$("#b1").click(function(){
+			$("#d1").append("<p>单击 </p>");
+		});
+		//双击事件
+		$("#b2").dblclick(function(){
+			$("#d1").append("<p>双击 </p>");
+		});
+		//焦点事件 
+		$("#textName").focus(function(){
+			$("#textName").val("获得焦点");
+		});
+		//失去焦点事件 
+		$("#textName").blur(function(){
+			$("#textName").val("失去焦点");
+		});
+		//鼠标移出事件
+		$("#d2").mouseout(function(){
+			$("#d2").html("鼠标移出");
+		});
+		//鼠标移入事件
+		$("#d2").mouseover(function(){
+			$("#d2").html("鼠标移入");
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<input type="button" value="单击" id="b1">
+	<input type="button" value="双击" id="b2">
+	 <div id="d1"></div><br>
+	 <input type="text" id="textName">
+	 <hr>
+	 <div id="d2" style="border: 1px solid black;height: 100px;width: 100px;"></div>
+</body>
+</html>

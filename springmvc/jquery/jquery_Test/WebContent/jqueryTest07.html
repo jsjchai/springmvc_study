@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery操作DOM节点</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		//1.查找节点
+		var li3=$("ul li:eq(3)");
+		//alert(li3.text());//得到节点值 
+		//2.创建节点 
+		var li5=$("<li>6666</li>");
+		var li6=$("<li>7777</li>");
+		$("ul").append(li5); //添加节点 
+		li6.insertAfter(li3);//在li3后面添加li6
+		//3.删除节点
+		$("ul li:eq(5)").remove();
+	});
+	
+</script>
+</head>
+<body>
+	
+	<ul>
+		<li>1111</li>
+		<li>2222</li>
+		<li>3333</li>
+		<li>4444</li>
+		<li>5555</li>
+	</ul>
+		
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jqueryTest1</title>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	//javascript
+	/* function getContent(){
+		 var val=document.getElementById("content").value;
+		 alert(val);
+	} */
+	/* $(document).ready(function(){
+		alert("1212");
+	}); */
+	//相当于onload()方法
+	 $(document).ready(function(){
+			$("#sm").click(function(){
+				alert($("#content").val());
+			});
+		}); 
+</script>
+</head>
+<body>
+	<input type="text" id="content">
+	<input type="submit" value="submit" id="sm" >
+</body>
+</html>

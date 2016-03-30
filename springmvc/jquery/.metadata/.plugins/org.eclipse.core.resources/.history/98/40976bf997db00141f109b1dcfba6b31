@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery事件</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	//onload事件 
+	$(document).ready(function(){
+		$("#b").click(function(){
+			$("#text").append("<p>单击 </p>");
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<input type="button" value="单击或双击" id="b">
+	 <div id="text">
+	 </div>
+	 
+</body>
+</html>

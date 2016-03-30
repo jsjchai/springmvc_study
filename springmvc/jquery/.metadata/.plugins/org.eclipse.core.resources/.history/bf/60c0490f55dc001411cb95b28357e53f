@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery动画效果</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	//onload事件 
+	$(document).ready(function(){
+		//显示
+		$("#b1").click(function(){
+			$("#img1").show();
+		});
+		//隐藏
+		$("#b2").click(function(){
+			$("#img1").hide();
+		});
+		//淡入
+		$("#b3").click(function(){
+			$("#img1").fadeIn();
+		});
+		//淡出 
+		$("#b4").click(function(){
+			$("#img1").fadeOut();
+		});
+		//淡入淡出开关
+		$("#b5").click(function(){
+			//$("#img1").fadeToggle();
+			//$("#img1").fadeToggle("slow");
+			//$("#img1").fadeToggle("fast");
+			$("#img1").fadeToggle(5000);
+		});
+		//透明度
+		$("#b6").click(function(){
+			$("#img1").fadeTo("slow",0.2);
+			$("#img2").fadeTo("slow",0.8);
+		});
+		//向上滑动
+		$("#b7").click(function(){
+			$("#img2").slideUp();
+		});
+		//向下滑动
+		$("#b7").click(function(){
+			$("#img2").slideUp();
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<input type="button" value="显示" id="b1">
+	<input type="button" value="隐藏" id="b2">
+	<input type="button" value="淡入" id="b3">
+	<input type="button" value="淡出 " id="b4">
+	<input type="button" value="淡入淡出开关 " id="b5">
+	<input type="button" value="透明度" id="b6">
+	<input type="button" value="向上滑动 " id="b7">
+	<input type="button" value="向下滑动" id="b8">
+	<hr>
+	<img alt="图片" src="./images/1.jpg" id="img1">
+	<img alt="图片" src="./images/2.jpg" id="img2">
+</body>
+</html>

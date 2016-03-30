@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>基本选择器</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	//id获取值 
+	$(document).ready(function(){
+		$("#aaa").css("background-color","blue");
+		$(".cc").css("font-size","30px");
+		$("a").css("color","green")
+	});
+	
+</script>
+</head>
+<body>
+	<ul>
+		<li id="aaa">aaa</li>
+		<li class="cc">bbb</li>
+		<li class="cc">ccc</li>
+	</ul>
+	<a>test1</a><br>
+	<a>test2</a>
+</body>
+</html>

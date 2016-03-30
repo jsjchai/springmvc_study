@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>属性选择器</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$("[href]").css("background-color","red");//获取属性为href的节点
+		alert($("[action]"));//获取属性 为action的节点
+		$("[href$=com]").css("background-color","gray");//获取href的尾部的值等于com的节点 
+	});
+	
+</script>
+</head>
+<body>
+	<form action="a.html"></form>
+	<a href="www.baidu.com">百度</a><br><br>
+	<a href="#">########</a><br>
+	
+	
+		
+</body>
+</html>

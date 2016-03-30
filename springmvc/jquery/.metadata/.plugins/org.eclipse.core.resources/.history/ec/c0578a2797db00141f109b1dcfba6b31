@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery操作DOM节点css</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		//查询 
+		alert($("#test").css("color"));
+		//修改
+		$("#test").css("color","black");
+	});
+	
+</script>
+</head>
+<body>
+	<p style="color: purple;" id="test">jquery</p>	
+</body>
+</html>

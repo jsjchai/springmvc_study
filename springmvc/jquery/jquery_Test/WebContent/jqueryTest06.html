@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>其他选择器</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$("h4.hello").css("background-color","red");//选择标签为h4且class="hello"
+		$("ul li:first").css("background-color","orange");
+		$("ul li:last").css("background-color","black");
+	});
+	
+</script>
+</head>
+<body>
+	<h4 class="hello">你好</h4>
+	<a class="hello">Hello</a><br><br>
+	<ul id="ggg">
+		<li>1111</li>
+		<li>2222</li>
+		<li>3333</li>
+		<li>4444</li>
+		<li>5555</li>
+	</ul>
+		
+</body>
+</html>

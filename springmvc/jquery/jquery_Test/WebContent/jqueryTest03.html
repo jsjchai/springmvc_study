@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jqueryTest3</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	//javascript
+	/* function getContent(){
+		 var val=document.getElementById("content").value;
+		 alert(val);
+	} */
+	function getContent(){
+		var con=$("#content").val();
+		alert(con);
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="content">
+	<input type="submit" value="submit" onclick="getContent()">
+</body>
+</html>

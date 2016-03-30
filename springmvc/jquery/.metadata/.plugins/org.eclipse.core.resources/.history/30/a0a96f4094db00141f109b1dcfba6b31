@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>遍历节点操作</title>
+<script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+<style type="text/css">
+	.c1{
+		font-size:40px;
+	}
+	.c2{
+		background-color: purple;
+	}
+	.c3{
+		background-color: orange;
+	}
+</style>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		var bodyObj=$("body").children();//得到body的子节点 
+		alert(bodyObj.length);
+		for(var i=0;i<bodyObj.length;i++){
+			alert(bodyObj[i].innterHtml);
+		}
+	});
+	
+</script>
+</head>
+<body>
+	
+	<ul>
+		<li class="c1">1111</li>
+		<li class="c2"><font color="blue">2222</font></li>
+		<li class="c3">3333</li>
+		<li>4444</li>
+	</ul>
+	<input type="text" name="username" id="textName"><br><br>
+	<input type="button" value="获取值" id="setButton">		
+	<input type="button" value="设置值" id="getButton">		
+</body>
+</html>
